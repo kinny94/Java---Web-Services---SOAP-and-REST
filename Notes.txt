@@ -1,0 +1,27 @@
+# Web Services Services
+Web application works using html and http, where as web Services works using http and xml. Where html is only understand by the web browser, xml could be read by any
+software applciation and converted into language objects in which that application was written. 
+The power of XML comes from its data nad meta-data.
+
+Advantages of web Services
+* Platform Independent - This independency comes from HTTP, which is transport independent, and XML which is Data Independent.
+* Application Tailoring/Customization 
+* Firewall friendly
+
+Disadvantages of web Services
+* Ambigious Web Services standards
+* Performance impact due to serialization and derialization 
+
+When to use Soap services.
+* When a formal contract is required.
+* Non functional requirements like -security and Transaction management are required.
+* Reliable Asynchronous Processing.
+
+SOAP - Services
+Specification from w3c.
+WSDL - The contract and much more.Web services description language. It's an xml file. It tells what this service provides and how and how consumer can access it
+Based on this the file is devided into two portion. Abstract portion and physical portion. Abstract portion tells what this web serive provides and what is it
+composed of. The physical component consist of two items. The binding and service and how consumer can use it. 
+
+Abstraction - types, messages, operation, porttype
+Physical - binding, services 
