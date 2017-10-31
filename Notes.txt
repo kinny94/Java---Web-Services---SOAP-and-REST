@@ -47,6 +47,7 @@ Advantages of WSDL:-
 Advantages of Code first Design:-
     * Legacy application Integration
 
+JAXB - Java Api for XML binding         
 JAXB stands for java architecture for XML binding. It provides an easy way to map java classes and XML Schema.
 Provides three tools:-
     XJC - It can generate java classes from a given XML Schema.
@@ -55,3 +56,18 @@ Provides three tools:-
 
 Marshalling is the process of converting java objects in xml. and unmarshalling is the other wat round.
 
+APACHE CXF - A popular web services stack. Implement both JAX-WS and JAX-RS
+Why CXF :-
+    Comes with SOAP/REST Engine
+        Serialize and De-serialize.
+        Publish and dispatch.
+    
+    It  implements all the web services standards.
+
+    Tools:- 
+        wsdl2java
+        java2wsdl
+
+    Provides spring configuration
+    Allows us to extend and customize 
+    Documentation and samples
