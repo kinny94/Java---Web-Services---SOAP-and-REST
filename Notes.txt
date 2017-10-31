@@ -25,3 +25,30 @@ composed of. The physical component consist of two items. The binding and servic
 
 Abstraction - types, messages, operation, porttype
 Physical - binding, services 
+
+SOAP WS Design 
+* Top down or WSDL First or Contract first 
+* Code First or Bottom up
+
+* WSDL First or Contract First Approach
+    * Create the WSDL file - has all the information about the web service
+    * Generate the java stubs using tools like wsdl2java
+    * Implement the web services end point
+
+Advantages of WSDL:-
+    * Contract with the consumer is signed off
+    * Better Interoperability
+    * Faster Integration
+
+* Code First Design
+    * Write Java code first and annotate
+    * Generate the WSDL code from the code using java2wsdl
+
+Advantages of Code first Design:-
+    * Legacy application Integration
+
+JAXB stands for java architecture for XML binding. It provides an easy way to map java classes and XML Schema.
+Provides three tools:-
+    XJC - It can generate java classes from a given XML Schema.
+    SCHEMAGEN - It generates a XML schema from a java class.
+    RUNTIMEAPI - It converts the java objects into XML. It comprised of Marshall class, UNMarshall class and Annotations.
