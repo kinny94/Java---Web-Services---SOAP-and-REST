@@ -52,3 +52,6 @@ Provides three tools:-
     XJC - It can generate java classes from a given XML Schema.
     SCHEMAGEN - It generates a XML schema from a java class.
     RUNTIMEAPI - It converts the java objects into XML. It comprised of Marshall class, UNMarshall class and Annotations.
+
+Marshalling is the process of converting java objects in xml. and unmarshalling is the other wat round.
+
