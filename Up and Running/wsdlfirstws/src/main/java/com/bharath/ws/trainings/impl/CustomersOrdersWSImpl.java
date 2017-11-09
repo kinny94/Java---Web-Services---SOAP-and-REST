@@ -40,29 +40,27 @@ public class CustomersOrdersWSImpl implements CustomerOrdersPortType {
 
 	@Override
 	public GetOrdersResponse getOrders(GetOrdersRequest request) {
-		BigInteger customerID = request.getCustomerId();
-		List<Order> orders = customerOrders.get(customerID);
-		
+		BigInteger customerId = request.getCustomerId();
+		List<Order> orders = customerOrders.get(customerId);
+
 		GetOrdersResponse response = new GetOrdersResponse();
 		List<Order> responseOrders = response.getOrder();
-		
-		for(Order order: orders) {
+		for (Order order : orders) {
 			responseOrders.add(order);
 		}
-		
+
 		return response;
 	}
 
 	@Override
 	public CreateOrdersResponse createOrders(CreateOrdersRequest request) {
 		Order order = request.getOrder();
-		
+
 		List<Order> currentOrders = customerOrders.get(request.getCustomerId());
 		currentOrders.add(order);
-		
-		CreateOrdersResponse createOrdersResponse  = new CreateOrdersResponse();
+		CreateOrdersResponse createOrdersResponse = new CreateOrdersResponse();
+
 		createOrdersResponse.setResult(true);
-		
 		return createOrdersResponse;
 	}
 }
