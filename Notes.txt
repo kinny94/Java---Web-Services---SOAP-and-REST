@@ -71,3 +71,19 @@ Why CXF :-
     Provides spring configuration
     Allows us to extend and customize 
     Documentation and samples
+
+Web standars:
+    Authencation:
+        * Username Token Profile
+        * X 508 Certificates
+        * SAML 
+    Confidentiality:
+        * Encryption and Decryption
+    Integrity:
+        * XML Signature
+
+MTOM -  For Exchanging Files
+WS Addressing - Asynchronous Callbacks
+WS Policy = Assert and mandate certain rules to consume our webservices
+WS Secure Conversation - Improve performamnce while encrypting and decrypting by negotiating a key at the begining 
+WS Security Policy - Assert WS-Security requirements
