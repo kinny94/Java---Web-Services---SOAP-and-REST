@@ -87,3 +87,10 @@ WS Addressing - Asynchronous Callbacks
 WS Policy = Assert and mandate certain rules to consume our webservices
 WS Secure Conversation - Improve performamnce while encrypting and decrypting by negotiating a key at the begining 
 WS Security Policy - Assert WS-Security requirements
+
+*******************************************************************************************************************************************************
+
+Spring 5
+JPA 
+JPA is a bridge from Java's Object world to know how data is stored in relational databases.
+JPA offers Java developers database independence.
