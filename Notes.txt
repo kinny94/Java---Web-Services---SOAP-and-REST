@@ -94,3 +94,73 @@ Spring 5
 JPA 
 JPA is a bridge from Java's Object world to know how data is stored in relational databases.
 JPA offers Java developers database independence.
+
+******************************************************************************************************************************************
+
+ThymeLeaf
+
+ThymeLeaf is java template engine
+Its is a natural template engine. Natural meaning you can view templates in your browser.
+
+******************************************************************************************************************************************
+
+S.O.L.I.D Principle of OOPS
+
+1) Single Responsibility of Principle
+    * Every class should have a single Responsibility.
+    * There should never be more than one reason for a class to change.
+    * Your class should be small.
+    * Splig big classes into smaller classes.
+
+2) Open/Closed Principle
+    * Your class should be open for extension
+    * But closed for modification
+    * You should extend the class behaviour without modifying it.
+    * Use absract base classes.
+
+3) Liskov Substitution Principle
+    * Objects in the program would be replacable with instances of their subtypes WITHOUT altering the correctness of the program.
+    * Violations will often fail the "Is a" test.
+
+4) Interface Segregatin Principle
+    * Make fine grained interfaces that are client specific.
+    * Many clients specific interfaces are better than one "general purpose" interfaces.
+    * Keep your components focused and minimize dependencies between them.
+
+5) Dependency inversion Principle
+    * Abstraction should not depend upon details.
+    * Details should not depend upon absractions.
+    * Important that higher level and lower level objects depend on the same abstraction interaction.
+
+****************************************************************************************************************************************
+
+Dependency Injection
+
+* Dependency Injection is where a needed depenedency is injected by another object.
+* The class being injected has no responsibility in instantiated the object being injected.
+* Some say you avoid declaring objects using 'new'
+
+Types of Dependency Injection
+
+* By class properties - least preferred
+    * Using private properties is evil.
+
+* By Setters - Area of much debate
+* By Contructors - Most preferred
+
+Concrete classes vs Interfaces
+    * DI can be done with Concrete classes or with Interfaces
+    * Generally DI with Concrete classes should be avoided
+    * DI via interfaces is highly preferred
+    * Allows runtime to decide implementation to inject
+    * follows Interface segregation principle of SOLID
+    * Also, makes your code more testable.
+
+Inversion of Control (IoC)
+
+    * Is a technique to allow dependencies to be injected at run time
+    * Dependency are not predetermined.
+
+IoC VS DI
+    * DI refers much to the composition of your classes
+    * IoC is the runtime environment of your code
